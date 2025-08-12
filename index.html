@@ -1,83 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>QuadMedics Medical Portal — Home</title>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuadMedics - Your Offline Medical Gateway</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="page-home">
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="header-inner">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-title">QuadMedics</span>
+                    <span class="brand-sub">Your Offline Medical Gateway</span>
+                </a>
+                <nav class="main-nav">
+                    <a href="pharmacies.html">Pharmacies</a>
+                    <a href="hotlines.html">Hotlines</a>
+                    <a href="companion.html" class="cta">Companion</a>
+                </nav>
+            </div>
+        </header>
 
-<header class="site-header">
-<div class="header-inner container">
-<div class="brand">
-<a class="brand-link" href="index.html"><span aria-hidden="true" class="logo">⚕️</span> <span class="brand-title">QuadMedics</span></a>
-<p class="brand-sub">Medical Portal — Offline Demo</p>
-</div>
-<nav aria-label="Primary navigation" class="main-nav">
-<a href="pharmacies.html">Pharmacies</a>
-<a href="hotlines.html">Hotlines</a>
-<a href="body-sections.html">Body Sections</a>
-<a href="specialists.html">Specialists</a>
-<a class="cta" href="companion.html">Companion</a>
-</nav>
-</div>
-</header>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Your Health, Always On.</h1>
+                    <p>Access critical medical information anytime, anywhere, even without an internet connection.</p>
+                    <div class="quick-search">
+                        <input type="text" placeholder="Search for symptoms, doctors...">
+                        <button>Search</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://i.imgur.com/uR11E44.png" alt="Doctor providing care" width="300" height="300">
+                    <p class="muted">Your Virtual Healthcare Companion, Powered by AI</p>
+                </div>
+            </section>
 
-<main class="container hero">
-<section class="hero-left">
-<h1 class="hero-title">Fast, clear medical guidance — offline.</h1>
-<p class="hero-sub">Find pharmacies, emergency hotlines, quick body-area guidance and which specialist to see. All works offline — no APIs required.</p>
+            <section class="info-cards">
+                <div class="card-grid">
+                    <a href="pharmacies.html" class="card">
+                        <h3>Pharmacies</h3>
+                        <p class="muted">Find nearby pharmacies, check for 24/7 services, and more.</p>
+                    </a>
+                    <a href="hotlines.html" class="card">
+                        <h3>Hotlines</h3>
+                        <p class="muted">Emergency and support numbers for medical, psychological, and other needs.</p>
+                    </a>
+                    <a href="body-sections.html" class="card">
+                        <h3>Body Sections</h3>
+                        <p class="muted">Quick first-aid and advice for problems in different parts of the body.</p>
+                    </a>
+                    <a href="specialists.html" class="card">
+                        <h3>Specialists</h3>
+                        <p class="muted">Connect with the right doctor for your specific health concern.</p>
+                    </a>
+                </div>
+            </section>
+        </main>
 
-<div class="feature-grid">
-<a aria-label="Open Pharmacies page" class="feature-card" href="pharmacies.html">
-<div class="feature-title">Pharmacies</div>
-<div class="feature-desc">24/7, delivery &amp; temperature-sensitive handling tips.</div>
-</a>
-<a aria-label="Open Hotlines page" class="feature-card" href="hotlines.html">
-<div class="feature-title">Hotlines</div>
-<div class="feature-desc">Emergency &amp; specialist helplines with quick-call buttons.</div>
-</a>
-<a aria-label="Open Body Sections page" class="feature-card" href="body-sections.html">
-<div class="feature-title">Body Guidance</div>
-<div class="feature-desc">Area-based quick solutions and first-aid reminders.</div>
-</a>
-<a aria-label="Open Specialists page" class="feature-card" href="specialists.html">
-<div class="feature-title">Specialists</div>
-<div class="feature-desc">Who to see for common symptoms and what to expect.</div>
-</a>
-</div>
-
-<div class="lead-controls">
-<a class="btn-outline" href="companion.html">Open Companion — Offline AI</a>
-<a class="btn-ghost" href="pharmacies.html">Find nearest pharmacy</a>
-</div>
-</section>
-
-<aside aria-hidden="false" class="hero-right">
-<div class="card stats">
-<div class="section-title">Why choose QuadMedics</div>
-<ul>
-<li>Works fully offline in your browser</li>
-<li>Clear step-by-step first-aid &amp; escalation guidance</li>
-<li>Accessible, responsive and keyboard-friendly</li>
-</ul>
-</div>
-<div class="card updates" id="home-notes">
-<div class="section-title">Developer Notes</div>
-<p>All content is bundled locally. The Companion is rule-based with typo correction and fuzzy matching tied to site knowledge.</p>
-</div>
-</aside>
-</main>
-
-<footer class="site-footer">
-<div class="container footer-inner">
-<div>© QuadMedics — Offline Medical Portal</div>
-<div><a href="companion.html">Open Companion</a> · <a href="index.html">Home</a></div>
-</div>
-</footer>
-
-<script defer src="script.js"></script>
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <p>&copy; 2024 QuadMedics. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
